@@ -1,0 +1,181 @@
+
+.panel-heading-con-opciones, .panel-body {
+    border-radius: 0px;
+}
+
+.panel {
+    margin-bottom: 0px;
+}
+
+.texto_header_cliente {
+    margin-left: -15px;
+}
+
+.texto_requerido {
+    margin-top: 10px;
+}
+
+@media (max-width: 240px) {
+    .panel-heading-con-opciones span {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 320px) {
+   
+    .contador_registros {
+        font-size: 68px;
+        margin-left: -9px;
+    }
+
+    .subtexto_contador_registros {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+
+    .cont_link_sobre_nosotros {
+        margin-left: 7px;
+        border: solid 1px #333333;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        border-radius: 5px;
+    }
+
+    #facebook {
+        margin-top: -10px;
+        margin-left: 10px;
+        width: 47px;
+    }
+
+    #twitter {
+        margin-top: -1px;
+        margin-left: 10px;
+        width: 47px;
+    }
+}
+
+@media (min-width: 480px) {   
+
+    .link_sobre_nosotros {        
+        font-size: 22px;
+    }
+
+    .cont_link_sobre_nosotros {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    #facebook {
+        margin-top: -13px;
+        margin-left: 30px;
+        width: 78px;
+    }
+
+    #twitter {
+        margin-top: -3px;
+        margin-left: 30px;
+        width: 78px;
+    }
+}
+
+@media (min-width: 540px) {
+    
+    #facebook, #twitter {
+        margin-left: 25px;
+    }
+}
+
+@media (min-width: 640px) {
+   
+    #facebook, #twitter {
+        margin-left: 35px;
+    }
+}
+
+@media (min-width: 768px) {
+    .registro {
+         margin-bottom: 15px;
+    }
+    .registro .panel-heading-con-opciones {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    
+    .registro .panel-body {
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    #facebook, #twitter {
+        margin-top: -5px;
+        margin-left: -5px;
+        width: 78px;
+    }
+
+    .contador_registros {
+        font-size: 40px;
+        margin-left: -155px;
+    }
+
+    .subtexto_contador_registros {
+        font-size: 14px;
+        margin-top: 0px;
+        margin-bottom: -10px;
+    }
+
+    .texto_requerido {
+        font-size: 16px;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+    
+    #btn_registro_mod {
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+  
+    .contador_registros {
+        font-size: 48px;
+        margin-left: -10px;
+    }
+
+    .subtexto_contador_registros {
+        margin-top: -2px;
+    }
+    
+    #btn_registro_mod {
+        margin-bottom: 5px;
+    }
+    
+     #facebook, #twitter {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contador_registros {
+        font-size: 48px;
+        margin-left: -10px;
+    }
+
+    .subtexto_contador_registros {
+        margin-top: -2px;
+    }
+
+    .texto_requerido {
+        font-size: 14px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    
+    .subtexto_contador_registros {
+        margin-top: -2px;
+    }
+    
+    #facebook, #twitter {
+        margin-top: 0px;
+    }
+}

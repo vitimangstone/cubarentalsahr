@@ -1,0 +1,791 @@
+/******************************************************************************************************************/
+/*                                                                                                                */
+/*   Galeria   Galeria   Galeria   Galeria   Galeria   Galeria   Galeria   Galeria   Galeria   Galeria            */
+/*                                                                                                                */
+/******************************************************************************************************************/
+.contenedor_file { 
+    overflow: hidden;
+}
+
+.file_extra {  
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;  
+    opacity: 0;
+    font-size: 4cm;
+    height: 4cm; 
+    margin-left: -10cm;
+    margin-top: -2cm
+}
+
+.switch-pages{
+    font-size: 25px;
+    color: #b81900;
+}
+
+.progress-bar{
+    background: #c11901;
+    width: 0px;
+    animation: colorchange 2s;
+    animation-iteration-count: infinite ;
+}
+
+.sending{
+    position: fixed;
+    right: 5px ;
+    top:55px;
+    background: #eee;
+    width: 20%;
+    border-radius: 10px 10px 10px 10px;
+    display: none;
+}
+
+@keyframes colorchange {
+    0% {width: 0%}
+    25% {width: 25%}
+    50% {width: 50%}
+    75% {width: 75%}
+    100%{width: 100%}
+}
+
+
+.contenedor_imagenes {
+    float: left;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 5px #333333;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 2.5px;
+    margin-bottom: 2.5px;
+}
+
+.contenedor_opciones_imagen {
+    background-color: white;
+    padding: 5px 0px 0px 5px;
+    border-top-left-radius: 8px;
+    position: absolute;
+    margin-left: 164px;
+    margin-top: 170px;
+    width: 45px;
+    height: 40px;
+}
+
+.imagen2 {
+    width: 290px;
+    height: 290px;
+}
+
+.imagen2:hover {
+    cursor: pointer;
+}
+
+.imagen_visor {
+    background-color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px; 
+    margin-bottom: 15px; 
+    max-height: 600px;
+}
+
+.imagen_recortar_perfil {
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    margin: 0px;
+}
+
+.contenedor_visor {
+    overflow: hidden;
+}
+
+.precio_reserva_portada {
+    background-color: white;
+    border-top-left-radius: 8px;
+    position: absolute;
+    z-index: 2;
+    bottom: 4px;
+    right: 19px;   
+    padding-left: 5px;   
+}
+
+.nombre_opciones_portada {    
+    position: absolute;
+    height: 75px; 
+    z-index: 10;
+}
+
+.perfil-title{
+    padding: 0;
+    margin: 0;
+    padding: 5px;
+    color: whitesmoke;
+    background: #b81900;
+    border-radius: 5px;
+}
+
+.nombre_opciones_portada_degradado {
+    background: linear-gradient(180deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5), rgba(255,255,255,0));
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,0.5)),rgba(0,0,0,0.5), to(rgba(255,255,255,0)));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(255,255,255,0));
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, rgba(0,0,0,.7), rgba(0,0,0,0));
+    /* IE 10 */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(255,255,255,0));
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0.5), rgba(255,255,255,0));
+}
+
+.nombre_negocio {
+    margin-top: 5px;
+    margin-left: -10px;
+    width: 100%;
+    position: absolute;
+}
+
+.nombre_negocio_h4 {
+    color: white;
+    margin-top: 6px;
+    margin-left: -10px;
+    font-size: 16px;
+}
+
+.contenedor_cargar_portada {
+    overflow: hidden;
+    /*    margin: 5px 10px 3px 20px;*/
+    width: 230px;
+    padding: 3px 10px 2px 20px;
+}
+
+.contenedor_cargar_perfil {
+    overflow: hidden;
+    width: 190px;
+    padding: 3px 10px 2px 10px;
+}
+
+.contenedor_cargar_portada:hover, .contenedor_cargar_perfil:hover {
+    background-color: #f2f2f2;
+}
+
+.file_panoramica {   
+    opacity:0;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10; 
+    font-size: 20px;
+    width: 230px;
+    margin-left: -20px;
+    top: 0;
+    height: 30px;
+}
+
+.file_perfil {   
+    opacity:0;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10; 
+    font-size: 20px;
+    width: 220px;
+    margin-left: -22px;
+    top: 0;
+    height: 30px;
+}
+
+.foto_panoramica { 
+    position: relative;
+}
+
+.arrastrador {
+    background-color: transparent;
+    width: 96%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.cont_foto_panoramica {
+    overflow: hidden;
+    height: 100%;
+    padding: 0px;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0px 0px 5px #333333;
+    background-color: #222222;
+    border-radius: 5px;
+}
+
+.sin_panoramica {
+    background-color: #b81900;
+}
+
+.contenedor_comentario {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 5px #333333;
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: #b81900;
+    border-radius: 5px;    
+}
+
+.contenedor_recortar {
+    display: none;
+}
+
+.ajustar {
+    margin-top: 15px;
+}
+
+.contenedor_caracteristicas {
+    height: 385px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 5px;
+}
+
+#cboxContent, #cboxLoadedContent {
+    padding: 0px;
+}
+
+#cerrar_ventana_info_principal, #cerrar_ventana_caracteristicas, #cerrar_ventana_comodidades {
+    width: 1.3cm;
+    float: right;
+}
+
+.cont_opciones_panoramica {
+    margin-top: 5px;
+}
+
+.btn_galeria {
+    font-size: 25px;
+    color: rgba(255,255,255,.4);
+    cursor: pointer;
+}
+
+.btn_galeria:hover {
+    color: rgba(255,255,255,1);
+}
+
+.imagen_mini {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px; 
+    margin-top: 3px;
+    opacity: .4;
+    cursor: pointer;
+}
+
+.imagen_mini:hover, .imagen_mini_activa {
+    opacity: 1;
+}
+
+.establecer_portada {
+    font-size: 16px;
+    color: rgba(255,255,255,.4);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.establecer_portada:hover, .establecer_portada:hover .btn_galeria {
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+}
+
+.foto_perfil {
+    height: 210px;
+    width: 210px;
+}
+
+.cont_opciones_perfil {
+    background-color: white;
+    padding: 5px 0px 0px 5px; 
+    border-top-left-radius: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 0px;
+    right: 0px;  
+}
+
+
+.cambiar_foto_perfil {
+    width: 40px;      
+}
+
+@media (min-width: 320px) {
+
+    .contador_registros {
+        font-size: 68px;
+        margin-left: -9px;
+    }
+
+    .subtexto_contador_registros {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+
+    .cont_link_sobre_nosotros {
+        margin-left: 7px;
+        border: solid 1px #333333;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        border-radius: 5px;
+    }
+
+    #facebook {
+        margin-top: -10px;
+        margin-left: 10px;
+        width: 47px;
+    }
+
+    #twitter {
+        margin-top: -1px;
+        margin-left: 10px;
+        width: 47px;
+    }
+}
+
+@media (min-width: 480px) {   
+
+    .link_sobre_nosotros {        
+        font-size: 22px;
+    }
+
+    .cont_link_sobre_nosotros {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    #facebook {
+        margin-top: -13px;
+        margin-left: 30px;
+        width: 78px;
+    }
+
+    #twitter {
+        margin-top: -3px;
+        margin-left: 30px;
+        width: 78px;
+    }
+}
+
+@media (min-width: 540px) {
+
+    #facebook, #twitter {
+        margin-left: 25px;
+    }
+}
+
+@media (min-width: 640px) {
+
+    #facebook, #twitter {
+        margin-left: 35px;
+    }
+}
+
+@media (min-width: 768px) {
+    .cont_opciones_perfil {        
+        bottom: 0px;
+        right: 0px;
+    }
+    .cont_foto_panoramica {
+        height: 165px;       
+    }  
+
+    .contenedor_foto_perfil {
+        height: 165px;
+        width: 165px;
+        position: relative;
+        margin: 0px;
+        top: 0px;
+    }
+
+    .foto_perfil {
+        height: 155px;
+        width: 155px;
+    }
+
+    .imagen2 {
+        width: 207px;
+        height: 207px;
+    }
+    .contenedor_opciones_imagen {
+        margin-top: 168px;
+        margin-left: 162px;
+    }
+
+    .contenedor_imagenes {
+        width: 217px;
+        height: 217px;
+    }
+    .panel-opcion {
+        width: 44px;
+        float: right;
+    }
+    #modal_recortar_foto_perfil .modal-dialog {
+        width: 810px;
+    }
+    .arrastrador {
+        height: 150px;
+        width: 94%;
+        top: 70px;
+    }
+
+    .fecha_comentario {
+        float: right;
+    }
+
+    #facebook, #twitter {
+        margin-top: -5px;
+        margin-left: -5px;
+        width: 78px;
+    }
+
+    .contador_registros {
+        font-size: 40px;
+        margin-left: -155px;
+    }
+
+    .subtexto_contador_registros {
+        font-size: 14px;
+        margin-top: 0px;
+        margin-bottom: -10px;
+    }
+
+    .texto_requerido {
+        font-size: 16px;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+
+    #btn_registro_mod {
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cont_opciones_perfil {
+        right: -2px;
+        bottom: 0px;
+        padding: 5px 2px 0px 5px; 
+    }
+
+    .cont_foto_panoramica {
+        height: 219px;
+    }
+
+    .contenedor_foto_perfil {
+        height: 350px;
+        width: 350px;
+        position: relative;
+        margin: 0px;
+        top: 0px;
+    }
+
+    .foto_perfil {
+        height: 340px;
+        width: 340px;
+    }
+
+    .imagen2 {
+        width: 207px;
+        height: 207px;
+    }
+    .contenedor_opciones_imagen {
+        margin-top: 168px;
+        margin-left: 162px;
+    }
+
+    .contenedor_imagenes {
+        width: 217px;
+        height: 217px;
+    }
+    #modal_recortar_foto_perfil .modal-dialog {
+        width: 960px;
+    }
+    .arrastrador {
+        height: 100%;
+        width: 96%;
+        top: 0px;
+    }
+
+    .contador_registros {
+        font-size: 48px;
+        margin-left: -10px;
+    }
+
+    .subtexto_contador_registros {
+        margin-top: -2px;
+    }
+
+    #btn_registro_mod {
+        margin-bottom: 5px;
+    }
+
+    #facebook, #twitter {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+   
+    .cont_foto_panoramica {
+        height: 350px;
+    }
+
+    .imagen2 {
+        width: 340px;
+        height: 340px;
+    }
+    .contenedor_opciones_imagen {
+        margin-top: 301px;
+        margin-left: 293px;
+    }
+    .contenedor_imagenes {
+        width: 350px;
+        height: 350px;
+    }
+    #modal_recortar_foto_perfil .modal-dialog {
+        width: 1150px;
+    }
+
+    .contador_registros {
+        font-size: 48px;
+        margin-left: -10px;
+    }
+
+    .subtexto_contador_registros {
+        margin-top: -2px;
+    }
+
+    .texto_requerido {
+        font-size: 14px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .subtexto_contador_registros {
+        margin-top: -2px;
+    }
+
+    #facebook, #twitter {
+        margin-top: 0px;
+    }
+}  
+
+.dropdown-menu li:hover {
+    cursor: pointer;
+}
+
+.dropdown_portada {
+    right: -6px;
+    margin-top: 0px;
+}
+
+.dropdown_perfil {
+    right: -4px;
+    margin-top: -1px;
+    width: 195px;
+}
+
+.cont_nombre_negocio {
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #b81900;
+    box-shadow: 0px 0px 5px #333333;
+    border: solid white 5px;
+}
+
+.btn_galeria {
+    font-size: 25px;
+    color: rgba(255,255,255,.4);
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.btn_galeria:hover {
+    color: rgba(255,255,255,1);
+}
+
+.btn_galeria_cancelar, .btn_galeria_aceptar {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+    margin-left: 5px;
+    top: -6px;
+}
+
+#modal_recortar_foto_perfil .modal-body {
+    padding: 0px;
+} 
+
+.btn_galeria_recortar {
+    background-color: transparent;
+    border: none;    
+}
+
+.btn_galeria_recortar:hover .btn_galeria {
+    color: white;
+}
+
+#cambiar_contrasena {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 230px;
+}
+
+#configuraciones .modal-footer {
+    margin-top: 0px;
+}
+
+
+.foto_perfil1 {
+    width: 190px;
+    height: 190px;
+}
+.contenedor_imagenes1 {
+    float: left;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 5px #333333;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: -1px;
+}
+
+.selector_negocio {
+    display: none;
+    width: 190px;
+    height: 190px;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    z-index: 2;
+}
+
+
+.btn_subir {
+    bottom:10px;
+    right: 7%;
+    position: fixed;
+    background: red;
+    padding: 5px 2px 0px 0px;
+    border-radius: 5px;
+}
+
+
+/*.btn_subir_arrow {*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*background: red;*/
+    /*position: fixed;*/
+    /*bottom:225px;*/
+    /*right: 45px;*/
+/*}*/
+
+.btn_regresar_atras {
+    position: absolute;
+    font-size: 3em;
+    top: 0;
+    left: 0;
+    color: #B81900;
+    background: ghostwhite;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.btn_regresar_atras:hover{
+    color: #760300;
+
+}
+
+
+@media (max-width: 1700px){
+    .cont_foto_panoramica{
+        height: 300px;
+    }
+
+    .foto_perfil{
+        width: 290px;
+        height: 290px;
+    }
+
+    .contenedor_foto_perfil{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 1500px){
+    .cont_foto_panoramica{
+        height: 250px;
+    }
+
+    .foto_perfil{
+        width: 240px;
+        height: 240px;
+    }
+
+    .contenedor_foto_perfil{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (max-width: 1050px){
+    .cont_foto_panoramica{
+        height: 190px;
+    }
+
+    .foto_perfil{
+        width: 180px;
+        height: 180px;
+    }
+
+    .contenedor_foto_perfil{
+        width: 190px;
+        height: 190px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor_foto_perfil {
+        height: 300px;
+        width: 300px;
+        position: relative;
+        margin: 0px;
+        top: 0px;
+    }
+
+    .foto_perfil {
+        height: 290px;
+        width: 290px;
+    }
+
+    .cont_opciones_perfil {
+        bottom: -1px;
+        right: -1px;
+    }
+    .imagen2 {
+        width: 188px;
+        height: 188px;
+    }
+    .contenedor_opciones_imagen {
+        margin-top: 149px;
+        margin-left: 143px;
+    }
+    .contenedor_imagenes {
+        width: 198px;
+        height: 198px;
+    }
+}

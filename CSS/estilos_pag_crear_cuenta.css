@@ -1,0 +1,369 @@
+
+/******************************************************************************************************************/
+/*                                                                                                                */
+/*   Files   Files   Files   Files   Files   Files   Files   Files   Files   Files   Files   Files   Files        */
+/*                                                                                                                */
+/******************************************************************************************************************/
+
+.file {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;   
+    opacity: 0;
+    font-size: 30px;
+    /*height: 5.85cm;*/
+    margin-left: -2px;;
+    margin-top: -40px;
+}
+
+.file_extra {  
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;  
+    opacity: 0;
+    font-size: 1cm;
+    height: 2cm; 
+    margin-left: -5cm;
+    margin-top: -.5cm
+} 
+
+/******************************************************************************************************************/
+/*                                                                                                                */
+/*   Foto_Perfil   Foto_Perfil   Foto_Perfil   Foto_Perfil   Foto_Perfil   Foto_Perfil   Foto_Perfil              */
+/*                                                                                                                */
+/******************************************************************************************************************/
+
+.contenedor_foto_perfil {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.cont_opciones_perfil {
+    background-color: white;
+    padding: 5px 0px 0px 5px; 
+    border-top-left-radius: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 0px;
+    right: -1px; 
+    width: 46px;
+    overflow: hidden;
+}
+
+.cambiar_foto_perfil {
+    width: 40px;      
+}
+
+.perfil {
+    height: 209px;
+    width: 209px;
+    margin-left: -15px;
+}
+
+.btn_galeria {
+    font-size: 25px;
+    color: rgba(255,255,255,.4);
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.btn_galeria:hover {
+    color: rgba(255,255,255,1);
+}
+
+.btn_galeria_cancelar, .btn_galeria_aceptar {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+    margin-left: 5px;
+    top: -6px;
+}
+
+/*.perfil1 {
+    
+    position: relative;
+    z-index: 5;
+}
+
+.perfil {
+    display: none;
+    border-style: solid;
+    border-color: white;
+      
+}*/
+
+/******************************************************************************************************************/
+/*                                                                                                                */
+/*   Utiles   Utiles   Utiles   Utiles   Utiles   Utiles   Utiles   Utiles   Utiles   Utiles   Utiles             */
+/*                                                                                                                */
+/******************************************************************************************************************/
+
+.alert_Jcrop {
+    display: none;
+} 
+
+.imagen_extra1, .imagen_extra2 {    
+    background-color: white;
+    box-shadow: 0px 0px 5px #333333;
+    padding: 5px;
+    border-radius: 5px;    
+}
+
+.contenedor_recortar {
+    display: none;
+}
+
+.ajustar {
+    margin-top: 15px;
+}
+
+.header {
+    margin-bottom: 15px;
+}
+
+.info1 {
+    border-radius: 5px;
+    height: 145px;
+    padding: 20px 15px 20px 15px;
+    margin-bottom: 15px;
+}
+
+.info2 {
+    border-radius: 5px;
+    padding: 18px 15px 18px 15px;   
+    margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+    .cont_msg .alert-info {
+        height: auto;        
+    }
+    .info2 {
+        margin-bottom: 15px;
+    }
+    .imagen_extra1, .imagen_extra2 { 
+        width: 184px;
+        height: 184px;
+        margin-left: 4px;
+        margin-bottom: 4px;
+    }
+    #fotos-extras {
+        height: auto !important;
+    }
+    .panel_opcion_fotos_extras img{
+        margin-left: 46%;
+    }
+}
+@media (min-width: 320px) {
+   
+    .contador_registros {
+        font-size: 68px;
+        margin-left: -9px;
+    }
+
+    .subtexto_contador_registros {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+
+    .cont_link_sobre_nosotros {
+        margin-left: 7px;
+        border: solid 1px #333333;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        border-radius: 5px;
+    }
+
+    #facebook {
+        margin-top: -10px;
+        margin-left: 10px;
+        width: 47px;
+    }
+
+    #twitter {
+        margin-top: -1px;
+        margin-left: 10px;
+        width: 47px;
+    }
+}
+
+@media (min-width: 480px) {   
+
+    .link_sobre_nosotros {        
+        font-size: 22px;
+    }
+
+    .cont_link_sobre_nosotros {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    #facebook {
+        margin-top: -13px;
+        margin-left: 30px;
+        width: 78px;
+    }
+
+    #twitter {
+        margin-top: -3px;
+        margin-left: 30px;
+        width: 78px;
+    }
+}
+
+@media (min-width: 540px) {
+    
+    #facebook, #twitter {
+        margin-left: 25px;
+    }
+}
+
+@media (min-width: 640px) {
+   
+    #facebook, #twitter {
+        margin-left: 35px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .cont_msg .alert-info, .alert-success {
+        width: 455px;
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+    .info1 {
+        height: 152px;
+    }
+    .imagen_extra1, .imagen_extra2 { 
+        width: 160px;
+        height: 160px;
+        margin-left: 3.5px;
+        margin-bottom: 3.5px;
+    }
+    #fotos-extras {
+        height: auto !important;
+    }
+    .panel_opcion_fotos_extras {
+        width: 44px;
+        margin-left: 3px;
+        float: right;
+        border-radius: 0px 5px 0px 0px;
+    }
+    .panel_opcion_fotos_extras img{
+        margin-left: -4px;
+    }
+    .visor_recortar_imagen_perfil{
+        width: 810px;        
+    }
+    .visor_recortar_imagen_perfil .modal-body {
+        padding: 0px;
+    }
+    
+    #facebook, #twitter {
+        margin-top: -5px;
+        margin-left: -5px;
+        width: 78px;
+    }
+
+    .contador_registros {
+        font-size: 40px;
+        margin-left: -155px;
+    }
+
+    .subtexto_contador_registros {
+        font-size: 14px;
+        margin-top: 0px;
+        margin-bottom: -10px;
+    }
+
+    .texto_requerido {
+        font-size: 16px;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+    
+    #btn_registro_mod {
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cont_msg .alert-info, .alert-success {
+        width: 675px;
+    }
+    .imagen_extra1, .imagen_extra2 { 
+        width: 78px;
+        height: 78px;
+        margin-left: 5px;
+    }
+    #fotos-extras {
+        height: 350px !important;
+    }
+    .visor_recortar_imagen_perfil{
+        width: 960px;
+    }
+    
+     .contador_registros {
+        font-size: 48px;
+        margin-left: -10px;
+    }
+
+    .subtexto_contador_registros {
+        margin-top: -2px;
+    }
+    
+    #btn_registro_mod {
+        margin-bottom: 5px;
+    }
+    
+     #facebook, #twitter {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cont_msg .alert-info, .alert-success {
+        width: 685px;
+    }
+    .imagen_extra1, .imagen_extra2 { 
+        width: 80px;
+        height: 80px;
+        margin-left: 4px;
+        margin-bottom: 2.5px;
+    }
+    #fotos-extras {
+        height: 350px !important;
+    }
+    .visor_recortar_imagen_perfil {
+        width: 1150px;
+    }
+    
+    .contador_registros {
+        font-size: 48px;
+        margin-left: -10px;
+    }
+
+    .subtexto_contador_registros {
+        margin-top: -2px;
+    }
+
+    .texto_requerido {
+        font-size: 14px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    
+    .subtexto_contador_registros {
+        margin-top: -2px;
+    }
+    
+    #facebook, #twitter {
+        margin-top: 0px;
+    }
+}
+
+
+

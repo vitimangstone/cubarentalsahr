@@ -1,0 +1,29 @@
+
+
+.jp-first, .jp-previous, .jp-next, .jp-last, #holder a {
+    cursor: pointer;
+    margin-right: 5px;    
+    padding: 5px;
+    color: white;
+    font:80% Verdana,Tahoma,sans-serif;    
+    background-color: #b81900;
+    border-radius: 2px;
+}
+.jp-first:hover, .jp-previous:hover, .jp-next:hover, .jp-last:hover {
+    background-color: #97110e !important;
+    color: white;
+    text-decoration: none;
+}
+
+.jp-current {
+    text-decoration: underline;
+}
+
+.jp-disabled {
+    opacity: .4;
+}
+
+.jp-disabled:hover { 
+    background-color: #b81900 !important;
+    cursor: default;
+}

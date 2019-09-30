@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+    .mensaje h4, .mensaje h5, .mensaje ul {
+        margin-left: 10px;
+    }
+}
